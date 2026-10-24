@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | D&C</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <main class="login-container">
+    <section class="welcome-panel">
+      <div class="brand">
+        <div class="brand-icon">D&C</div>
+        <span>degine&craft</span>
+      </div>
+
+      <div class="welcome-content">
+        <p class="eyebrow">YOUR SPACE. YOUR MIND.</p>
+        <h1>Welcome<br>to D&C<span>.</span></h1>
+        <p class="welcome-description">
+          Sign in to continue your journey. Your next big idea starts here.
+        </p>
+      </div>
+
+      <div class="welcome-footer">
+        <div class="avatar-stack">
+          <!-- <span>A</span><span>R</span><span>S</span><span>+</span>
+        </div>-->
+        <!-- <p>Coded by <b><i>ALTMASH RAZA</i></b>.</p>  -->
+      </div>
+    </section>
+
+    <section class="form-panel">
+      <div class="mobile-brand">D&C</div>
+
+      <div class="form-heading">
+        <p class="small-label">ACCOUNT ACCESS</p>
+        <h2>Sign in</h2>
+        <p class="subtitle">Enter your details to access your account.</p>
+      </div>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="you@example.com" required>
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="password-wrapper">
+            <input type="password" id="password" placeholder="Enter your password" minlength="6" required>
+            <button type="button" id="togglePassword" class="toggle-password">Show</button>
+          </div>
+        </div>
+
+        <div class="form-options">
+          <label class="remember">
+            <input type="checkbox" id="remember">
+            <span>Remember me</span>
+          </label>
+          <a href="#" id="forgotLink">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="login-button">
+          <span>Sign in</span>
+          <span class="arrow">→</span>
+        </button>
+
+        <p id="message" class="message" aria-live="polite"></p>
+      </form>
+
+      <div class="separator"><span>OR</span></div>
+
+      <button type="button" class="guest-button" id="guestButton">
+        Continue as guest
+      </button>
+
+      <p class="signup-text">
+        Don't have an account?
+        <a href="#" id="signupLink">Create account</a>
+      </p>
+
+      <p class="terms">
+        By continuing, you agree to our <a href="#">Terms</a> and
+        <a href="#">Privacy Policy</a> <br>
+          Coded by ALTMASH RAZA
+        .
+      
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&C Draw - Drawing Studio</title>
+  <link rel="stylesheet" href="drawing.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a href="index.html" class="brand"><span>D&C</span> D&C DRAW</a>
+    <div class="top-actions">
+      <span class="status">● Ready to create</span>
+      <button id="undoBtn" class="tool-btn">↶ Undo</button>
+      <button id="clearBtn" class="tool-btn">Clear</button>
+      <button id="saveBtn" class="save-btn">↓ Save PNG</button>
+    </div>
+  </header>
+
+  <main class="workspace">
+    <aside class="toolbar">
+      <h3>TOOLS</h3>
+
+      <button class="tool active" id="pencilBtn" title="Pencil">
+        <span>✏️</span> Pencil
+      </button>
+
+      <button class="tool" id="eraserBtn" title="Eraser">
+        <span>🧽</span> Eraser
+      </button>
+
+      <div class="setting">
+        <label for="colorPicker">Brush colour</label>
+        <input type="color" id="colorPicker" value="#24243a">
+      </div>
+
+      <div class="setting">
+        <label for="brushSize">Brush size <strong id="sizeValue">5 px</strong></label>
+        <input type="range" id="brushSize" min="1" max="50" value="5">
+      </div>
+
+      <div class="setting">
+        <label>Quick colours</label>
+        <div class="colors">
+          <button class="swatch" data-color="#24243a" style="--swatch:#24243a" aria-label="Dark"></button>
+          <button class="swatch" data-color="#ef4444" style="--swatch:#ef4444" aria-label="Red"></button>
+          <button class="swatch" data-color="#f59e0b" style="--swatch:#f59e0b" aria-label="Orange"></button>
+          <button class="swatch" data-color="#22c55e" style="--swatch:#22c55e" aria-label="Green"></button>
+          <button class="swatch" data-color="#3b82f6" style="--swatch:#3b82f6" aria-label="Blue"></button>
+          <button class="swatch" data-color="#a855f7" style="--swatch:#a855f7" aria-label="Purple"></button>
+          <button class="swatch" data-color="#ec4899" style="--swatch:#ec4899" aria-label="Pink"></button>
+          <button class="swatch" data-color="#ffffff" style="--swatch:#ffffff" aria-label="White"></button>
+        </div>
+      </div>
+
+      <div class="tip">
+        <span>💡</span>
+        <p>Tip: Draw by holding your mouse button and moving on the white canvas.</p>
+      </div>
+    </aside>
+
+    <section class="canvas-area">
+      <div class="canvas-heading">
+        <div>
+          <h2>My Canvas</h2>
+          <p>Every great idea starts with a line.</p>
+        </div>
+        <span class="canvas-badge">FREE DRAW</span>
+      </div>
+
+      <div class="canvas-frame" id="canvasFrame">
+        <canvas id="drawingCanvas"></canvas>
+        <div class="empty-hint" id="emptyHint">
+          <span>✦</span>
+          <p>Start drawing something amazing</p>
+        </div>
+      </div>
+
+      <footer class="canvas-footer">
+        <span>D&C Creative Studio</span>
+        <span>coded by <b><i>ALTMASH RAZA</i></b></span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="drawing.js"></script>
+</body>
+</html>
